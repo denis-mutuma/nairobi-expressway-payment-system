@@ -1,19 +1,22 @@
-# Rust Smart Contract Template
+# Nairobi Expressway Payment System
+
+## About this repository
+
+This repository is a Web3 payment system designed for use in the recently commissioned Nairobi expressway. This project utilises [NEAR Rust SDK](https://www.near-sdk.io/) for the smart contracts to compile Rust to Web Assembly (WASM), the low-level language used by the NEAR platform. Toll rates were obtained from the Nairobi expressway [website](https://nairobiexpressway.ke/).
 
 ## Getting started
 
-To get started with this template:
+To get started:
 
-1. Click the "Use this template" button to create a new repo based on this template
-2. Update line 2 of `Cargo.toml` with your project name
-3. Update line 4 of `Cargo.toml` with your project author names
-4. Set up the [prerequisites](https://github.com/near/near-sdk-rs#pre-requisites)
-5. Begin writing your smart contract in `src/lib.rs`
-6. Test the contract 
+1. Clone this repository
+
+2. Set up the [prerequisites](https://github.com/near/near-sdk-rs#pre-requisites)
+
+3. Test the contract 
 
     `cargo test -- --nocapture`
 
-8. Build the contract
+4. Build the contract
 
     `RUSTFLAGS='-C link-arg=-s' cargo build --target wasm32-unknown-unknown --release`
 
